@@ -1,0 +1,29 @@
+{
+  "name": "restapi_app_nodevue",
+  "version": "1.0.0",
+  "description": "practice",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/React-Vue-TeamPractice/RESTAPI_App_NodeVue.git"
+  },
+  "keywords": [
+    "js"
+  ],
+  "author": "Wise",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/React-Vue-TeamPractice/RESTAPI_App_NodeVue/issues"
+  },
+  "homepage": "https://github.com/React-Vue-TeamPractice/RESTAPI_App_NodeVue#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
