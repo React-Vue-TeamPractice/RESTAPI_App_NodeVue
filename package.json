@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/React-Vue-TeamPractice/RESTAPI_App_NodeVue#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "uuid": "^7.0.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.3"
