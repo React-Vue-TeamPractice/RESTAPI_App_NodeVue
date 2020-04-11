@@ -1,9 +1,18 @@
 import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.js'
 
+Vue.component('loader', {
+    template: `
+        <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    `
+})
+
 new Vue({
     el: '#app',
     data() {
         return {
+            loading: false,
             form: {
                 name: '',
                 value: ''
@@ -33,7 +42,9 @@ new Vue({
         }
     },
     async mounted() {
-        const data = await request('/api/contacts')
+        this.loading = true;
+        this.contacts = await request('/api/contacts')
+        this.loading = false;
     }
 })
 
